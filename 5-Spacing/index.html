@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live coding: 5-spacing</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="p-2">
+
+<body class="p-2 mb-8 ms-2">
 
     <h1 class="text-5xl text-center mb-8">Sizing</h1>
 
     <h2 class="text-2xl text-center my-3">Margini</h2>
-        <span class="bg-stone-400 me-10">Testo</span>
-        <span class="bg-teal-300">inline</span>
-        <div class="bg-cyan-500 w-[50px] h-[50px] my-2"></div>
-        <div class="bg-rose-400 w-[50px] h-[50px] ms-20 -mt-[30px]"></div>
+    <span class="bg-stone-400 me-10">Testo</span>
+    <span class="bg-teal-300">inline</span>
+    <div class="bg-cyan-500 w-[50px] h-[50px] my-2"></div>
+    <div class="bg-rose-400 w-[50px] h-[50px] ms-20 -mt-[30px]"></div>
 
     <h2 class="text-2xl text-center my-3">Padding</h2>
     <div class="bg-amber-400 px-5 pt-2 pb-3">Contenuto interno</div>
 
     <h2 class="text-2xl text-center my-3">Bordi</h2>
-    <p class="my-2 bg-zinc-300 border-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
+    <p class=" ps-4 my-2 bg-zinc-300 border-s-4 border-orange-300 rounded-tr-xl ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
+    <p class="my-2 bg-zinc-300 border-4 border-b-blue-600/75 rounded-bl-xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
+    <p class="my-2 bg-zinc-300 border-y-4 border-pink-500 rounded-2xl border-dashed">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
 
-    <p class="my-2 bg-zinc-300 border-4 border-b-blue-600/75 rounded-bl-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
 
-    <p class="my-2 bg-zinc-300 border-y-4 border-pink-500 rounded-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
+    <h2 class="text-2xl text-center my-3">Outline</h2>
+    <button class="p-1 mr-2 bg-stone-200 border-[1px] border-black outline outline-1 outline-rose-600 outline-offset-4">Button A</button>
+    <button class="p-1 mr-4 outline outline-4 outline-emerald-600/50 outline-double">Button B</button>
+    <button class="p-1 outline outline-offset-2 outline-[.4em] outline-yellow-400/[.85]">Button C</button>
 
-    <p class="my-2 bg-zinc-300 border-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate sequi.</p>
 
-
+    <h2 class="text-2xl text-center my-4">Ring</h2>
+    <button class="p-1 mr-2 ring ring-red-400/[.80] ring-offset-4 ring-offset-slate-50 border-[1px] border-black">Button A</button>
+    <button class="p-1 mx-4 ring-2 ring-green-400 ring-offset-4 ring-offset-fuchsia-400">Button B</button>
+    <button class="p-1 mx-4 bg-cyan-300 ring-4 ring-stone-400 ring-offset-8 ring-offset-red-400">Button C</button>
 
 </body>
+
 </html>
