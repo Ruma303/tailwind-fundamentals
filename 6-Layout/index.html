@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live coding: 6-Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-2 mb-8 ms-2 container">
+
+    <h1 class="text-5xl text-center mb-8">Layout</h1>
+
+
+    <h2 class="text-2xl text-center my-3">Columns</h2>
+    <p class="columns-3 mb-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita corrupti eaque, facere aperiam reiciendis,
+        enim voluptates illo distinctio molestiae dolorem animi vel? Necessitatibus, porro! Harum voluptate aspernatur
+        quaerat necessitatibus id.
+    </p>
+    <div class="columns-4 gap-2">
+        <img src="../img/img1.jpg" alt="img1">
+        <img src="../img/img2.jpg" alt="img2">
+        <img src="../img/img3.jpg" alt="img3">
+        <img src="../img/img4.jpg" alt="img4">
+    </div>
+
+
+    <h2 class="text-2xl text-center my-3">Float e clear</h2>
+    <img src="../img/img2.jpg" class="float-left max-w-[5rem] mr-3" alt="img1">
+    <p class="bg-stone-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officiis ipsum nemo
+        laudantium similique omnis officia veniam reprehenderit incidunt aliquam ex natus repellendus neque autem
+        perspiciatis, id facilis et. Sequi!</p>
+
+    <img src="../img/img3.jpg" class="float-right max-w-[5rem]" alt="">
+    <p class="bg-rose-300 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="bg-teal-300 clear-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officiis ipsum
+        nemo laudantium similique omnis officia veniam reprehenderit incidunt aliquam ex natus repellendus neque autem
+        perspiciatis, id facilis et. Sequi!</p>
+
+
+    <h2 class="text-2xl text-center my-3">Overflow</h2>
+    <p class="max-h-[5em] bg-zinc-300 overflow-y-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit
+        quia soluta aliquam aperiam perferendis quod voluptatem dolore, autem laborum. Nemo consequatur animi
+        perspiciatis tempore ea exercitationem vitae ipsa hic voluptatem.
+    </p>
+
+
+    <h2 class="text-2xl text-center my-3">Positioning</h2>
+    <!-- <div class="relative bg-neutral-300 h-24 overflow-y-auto">
+        <div class="bg-sky-400 right-0 absolute z-50">Absolute content</div>
+        <div class="bg-green-400 sticky top-0 w-fit">Sticky content</div>
+        <div class="bg-red-500 text-white -my-12 p-2 fixed left-52 z-auto">Fixed content</div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam praesentium corrupti adipisci, saepe officia in fugiat sed non optio magni, vero doloribus cumque autem illum animi? Dolores veniam voluptates dolorem.
+    </div> -->
+
+
+    <h2 class="text-2xl text-center my-3">Display e visibility</h2>
+    <div class="visible bg-indigo-300 p-2">
+        <p class="inline-block">Testo inline</p>
+        <img src="../img/img4.jpg" class="max-w-[5rem] invisible inline-block">
+        <p class="block">Testo block</pclass>
+    </div>
+
+
+    <h2 class="text-2xl text-center my-3">Flexbox</h2>
+    <div class="bg-gray-300 mx-auto w-9/12 h-48 flex flex-row-reverse gap-x-8 justify-center">
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 text-center place-self-end">1</div>
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 text-center self-center">2</div>
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 text-center">3</div>
+    </div>
+
+
+
+</body>
+
+</html>
