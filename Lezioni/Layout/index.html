@@ -66,12 +66,24 @@
 
     <h2 class="text-2xl text-center my-3">Flexbox</h2>
     <div class="bg-gray-300 mx-auto w-9/12 h-48 flex flex-row-reverse gap-x-8 justify-center">
-        <div class="bg-amber-400 border-2 border-black w-16 h-16 text-center grow-1 place-self-end">1</div>
-        <div class="bg-amber-400 border-2 border-black w-16 h-16 text-center self-center">2</div>
-        <div class="bg-amber-400 border-2 border-black w-16 h-16 text-center">3</div>
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 flex justify-center items-center text-3xl grow-1 place-self-end">1</div>
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 flex justify-center items-center text-3xl self-center">2</div>
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 flex justify-center items-center text-3xl">3</div>
+    </div>
+
+    <h3 class="mt-8 text-2xl text-center">Divide</h3>
+    <div class="my-3 flex divide-x-4 divide-dashed divide-rose-400 gap-x-8">
+        <p class="ps-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="ps-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="ps-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
 
 
+    <div class="bg-rose-300 mx-auto my-12 p-6 box-content w-6/12 h-60 flex flex-col justify-end items-center space-x-8 space-y-6">
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 flex justify-center items-center text-3xl order-3">1</div>
+        <div class="bg-amber-400 border-2 border-black flex justify-center items-center text-3xl order-1 self-stretch">2</div>
+        <div class="bg-amber-400 border-2 border-black w-16 h-16 flex justify-center items-center text-3xl order-2">3</div>
+    </div>
 
 </body>
 
