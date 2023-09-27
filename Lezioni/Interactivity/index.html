@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live coding: interactivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-2 pb-12 pt-3">
+
+    <main class="mx-auto flex flex-col justify-center items-center gap-6">
+
+        <h1 class="text-4xl text-center">Pseudo classi</h1>
+        <div class="container mx-auto flex flex-col justify-center items-center gap-3">
+
+            <button class="bg-sky-500 hover:bg-emerald-400 rounded p-1 w-fit">Hover</button>
+            <div class="bg-yellow-500 active:bg-rose-400 rounded text-center p-1 w-fit">Active</div>
+            <input class="text-center outline-4 focus:outline-red-600 p-1 w-fit" placeholder="Click here" />
+
+            <ol class="list-decimal">
+                <li class="p-1 first:text-red-500 first:text-2xl first:font-bold even:bg-green-300 odd:bg-yellow-400">
+                    Product 1</li>
+                <li class="p-1 even:bg-green-300 odd:bg-yellow-400">Product 2</li>
+                <li class="p-1 even:bg-green-300 odd:bg-yellow-400">Product 3</li>
+                <li class="p-1 last:bg-red-500">Product 4</li>
+            </ol>
+
+        </div>
+
+        <h1 class="text-4xl text-center">Pseudo Elementi</h1>
+        <div class="container mx-auto flex flex-col justify-center items-center gap-3">
+
+            <div class="inline-block before:content-['Contenuto-before-']">Inner HTML</div>
+            <div class="after:content-['-contenuto-after']">Inner HTML</div>
+
+        </div>
+
+
+        <h1 class="text-4xl text-center">Stile basato sullo stato del contenuto genitore</h1>
+        <div class="group block w-72 mx-auto rounded-lg p-6 bg-white shadow-lg space-y-2 hover:bg-sky-600 active:bg-black hover:ring-4 hover:ring-pink-400">
+            <h3 class="group-hover:text-white text-lg group-hover:text-3xl group-active:text-orange-400">Titolo</h3>
+            <p class="group-hover:text-white text-sm group-hover:text-lg group-active:text-orange-400">Testo della card
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>
