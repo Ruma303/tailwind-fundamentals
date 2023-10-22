@@ -9,20 +9,32 @@
 </head>
 
 <body class="p-2 mb-8 ms-2 container flex flex-col items-center gap-y-20">
+
+    <h1 class="text-5xl text-center mb-8">Transform</h1>
+
+    <div class="group mb-12">
+        <div class="w-36 h-36 bg-blue-600 group-hover:scale-x-50 group-hover:rotate-180 group-hover:bg-sky-500 group-hover:translate-y-1/3 group-hover:skew-y-12 group-hover:origin-right duration-1000 transition-all"></div>
+        <div class="w-36 h-36 bg-emerald-500 group-hover:scale-y-150 group-hover:rotate-180 group-hover:bg-fuchsia-500 group-hover:translate-y-1/3 group-hover:skew-y-12 group-hover:origin-left duration-1000 transition-all"></div>
+    </div>
+
+
     <h1 class="text-5xl text-center mb-8">Transitions</h1>
 
     <button class="px-4 py-2 text-white bg-sky-500 rounded hover:bg-red-600
-        duration-300 transition-colors duration-300 delay-100 ease-in
-    ">Click here</button>
+        duration-300 transition-all duration-300 delay-100 ease-in">Click here</button>
 
     <div class="w-52 h-32 bg-black hover:opacity-20 hover:w-72 hover:h-40
         transition-all ease-out duration-1000"></div>
 
-    <h1 class="text-5xl text-center mb-8">Transform</h1>
-
-
 
     <h1 class="text-5xl text-center mb-8">Animations</h1>
+    <div class="w-32 h-32 bg-red-600 motion-safe:animate-spin"></div>
+    <div class="w-32 h-32 bg-amber-400 hover:animate-spin flex justify-center items-center">
+        <p class="animate-pulse">Rotate me</p>
+    </div>
+    <div class="w-12 h-12 rounded-full bg-green-400 animate-ping"></div>
+
+
     <h1 class="text-5xl text-center mb-8">Filters</h1>
 </body>
 </html>
