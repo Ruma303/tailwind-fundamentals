@@ -1,8 +1,14 @@
 {
-    "dependencies": {
-        "tailwindcss": "^3.3.5"
-    },
+    "name": "tailwind",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
     "scripts": {
-        "build": "tailwindcss build -i css/app.css -o css/style.css"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "vite": "^5.2.0"
     }
 }
